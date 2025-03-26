@@ -1,0 +1,42 @@
+.currentWind{
+    height: 40vh;
+}
+
+.backgroundimage{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.opacity{
+    background-color: #f9f9f9;
+    opacity: 0.5;
+}
+
+.pictoWeather{
+    width: 100px;
+    height: 100px;
+}
+
+.picto{
+    width: 20px;
+    height: 20px;
+    margin: 3x;
+}
+
+.card{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 280px;
+    margin: 1rem auto;
+    text-align: center;
+    background-color: #9a9191;
+    opacity: 0.5;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }

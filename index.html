@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meteo</title>
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
+	<body class="" id="body">
+		<div class="container-fluid">
+		<!-- Première ligne : current -->
+			<div class="row p-2">
+				<!-- Première colonne -->
+				<div class="col-md-4 p-2 m-2">
+				<!-- Première ligne dans la première colonne -->
+					<div class="row p-2">
+						<div id="date&time" class="col-12 border p-2 opacity"></div>
+					</div>
+				<!-- Deuxième ligne dans la première colonne -->
+					<div class="row p-2">
+						<div id="locationCity" class="col-6 border p-2 opacity">Location</div>
+						<div id="isday" class="col-6 border p-2 opacity"></div>
+					</div>
+				</div>
+
+				<!-- Deuxième colonne -->
+				<div id="currentWeather" class="col-md d-flex flex-column justify-content-between border p-2 m-2 opacity">
+				</div>
+
+				<!-- Troisième colonne -->
+				<div class="col-md-4 p-2 m-2">
+				<!-- Première ligne dans la troisième colonne -->
+					<div class="row p-2">
+						<div id="currentPrecipitation" class="col-12 border p-2 opacity"></div>
+					</div>
+				<!-- Deuxième ligne dans la troisième colonne -->
+					<div class="row p-2">
+						<div id="currentWind" class="currentWind col-12 border p-2 position-relative opacity">
+							<img src="/assets/images/compass.png" alt="compass" class="img-fluid position-absolute top-50 start-50 translate-middle">
+							<img id="compass" src="/assets/images/compass-arrow.png" alt="compass arrow" class="position-absolute top-50 start-50">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Deuxième ligne : hourly -->
+			<div class="row p-2">
+				<div id="hourly" class="col-12 border p-2 d-flex opacity"></div>
+			</div>
+
+			<!-- Troisième ligne : daily -->
+			<div class="row p-2">
+				<div id="daily" class="col-12 border p-2 d-flex opacity"></div>
+			</div>
+		</div>
+	</body>
+	<script src="/script.js"></script>
+</html>
